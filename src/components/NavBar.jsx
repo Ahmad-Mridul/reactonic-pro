@@ -1,10 +1,10 @@
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 import { FaGithub } from "react-icons/fa";
 const NavBar = () => {
     const links = <>
-        <Link to="/"><li>Home</li></Link>
-        <Link to="/apps"><li>Apps</li></Link>
-        <Link to="/installation"><li>Installation</li></Link>
+        <NavLink to="/"><li>Home</li></NavLink>
+        <NavLink to="/apps"><li>Apps</li></NavLink>
+        <NavLink to="/installation"><li>Installation</li></NavLink>
     </>
     return (
         <>
@@ -16,14 +16,14 @@ const NavBar = () => {
                         </div>
                         <ul
                             tabIndex="-1"
-                            className="menu menu-sm dropdown-content bg-white rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            className="menu menu-sm dropdown-content bg-white rounded-box z-1 mt-3 w-52 p-2 shadow ">
                             {links}
                         </ul>
                     </div>
                     <a href="/" className="btn btn-ghost text-xl"><img src="logo.png" alt="" className="w-10" />Reactonic Pro</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu menu-horizontal px-1 gap-2 flex justify-center items-center">
                         {links}
                     </ul>
                 </div>

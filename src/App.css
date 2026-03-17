@@ -1,2 +1,10 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+.active{
+    text-decoration: underline;
+    border-radius: 3px;
+    color: #632EE3;
+    padding: 5px;
+    font-weight: bold;
+}
