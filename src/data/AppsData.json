@@ -1,0 +1,272 @@
+[
+  {
+    "image": "https://example.com/app1.png",
+    "title": "ChatFlow",
+    "companyName": "TechNova Ltd.",
+    "id": 1,
+    "description": "Smart AI chat assistant for daily productivity",
+    "size": 45,
+    "reviews": 12450,
+    "ratingAvg": 4.5,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 5650 }
+    ]
+  },
+  {
+    "image": "https://example.com/app2.png",
+    "title": "FitTrack",
+    "companyName": "Healthify Inc.",
+    "id": 2,
+    "description": "Track workouts and monitor health goals",
+    "size": 60,
+    "reviews": 9800,
+    "ratingAvg": 4.3,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 4300 }
+    ]
+  },
+  {
+    "image": "https://example.com/app3.png",
+    "title": "NoteMaster",
+    "companyName": "WriteWell",
+    "id": 3,
+    "description": "Simple and fast note-taking app",
+    "size": 25,
+    "reviews": 7600,
+    "ratingAvg": 4.6,
+    "downloads": 200000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 3600 }
+    ]
+  },
+  {
+    "image": "https://example.com/app4.png",
+    "title": "Foodify",
+    "companyName": "QuickEats",
+    "id": 4,
+    "description": "Order food from nearby restaurants easily",
+    "size": 80,
+    "reviews": 15000,
+    "ratingAvg": 4.2,
+    "downloads": 700000,
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 5900 }
+    ]
+  },
+  {
+    "image": "https://example.com/app5.png",
+    "title": "TravelMate",
+    "companyName": "ExploreWorld",
+    "id": 5,
+    "description": "Plan trips and discover new destinations",
+    "size": 70,
+    "reviews": 8200,
+    "ratingAvg": 4.4,
+    "downloads": 250000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 3200 }
+    ]
+  },
+  {
+    "image": "https://example.com/app6.png",
+    "title": "CodeHub",
+    "companyName": "DevSpace",
+    "id": 6,
+    "description": "Learn coding with interactive lessons",
+    "size": 55,
+    "reviews": 13200,
+    "ratingAvg": 4.7,
+    "downloads": 600000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 7200 }
+    ]
+  },
+  {
+    "image": "https://example.com/app7.png",
+    "title": "MusicWave",
+    "companyName": "SoundLab",
+    "id": 7,
+    "description": "Stream and download music easily",
+    "size": 90,
+    "reviews": 20000,
+    "ratingAvg": 4.1,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 2500 },
+      { "name": "3 star", "count": 3000 },
+      { "name": "4 star", "count": 6000 },
+      { "name": "5 star", "count": 6500 }
+    ]
+  },
+  {
+    "image": "https://example.com/app8.png",
+    "title": "ShopEasy",
+    "companyName": "MarketHub",
+    "id": 8,
+    "description": "Online shopping made simple and fast",
+    "size": 85,
+    "reviews": 17500,
+    "ratingAvg": 4.3,
+    "downloads": 850000,
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 6000 },
+      { "name": "5 star", "count": 6500 }
+    ]
+  },
+  {
+    "image": "https://example.com/app9.png",
+    "title": "PhotoFix",
+    "companyName": "PixelPro",
+    "id": 9,
+    "description": "Edit photos with powerful tools",
+    "size": 65,
+    "reviews": 11000,
+    "ratingAvg": 4.6,
+    "downloads": 400000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 5500 }
+    ]
+  },
+  {
+    "image": "https://example.com/app10.png",
+    "title": "WeatherNow",
+    "companyName": "SkyTech",
+    "id": 10,
+    "description": "Real-time weather updates and forecasts",
+    "size": 30,
+    "reviews": 8900,
+    "ratingAvg": 4.2,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 1400 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 3000 }
+    ]
+  },
+  {
+    "image": "https://example.com/app11.png",
+    "title": "FinancePro",
+    "companyName": "MoneyWise",
+    "id": 11,
+    "description": "Manage expenses and track savings",
+    "size": 50,
+    "reviews": 9500,
+    "ratingAvg": 4.4,
+    "downloads": 350000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1300 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 3600 }
+    ]
+  },
+  {
+    "image": "https://example.com/app12.png",
+    "title": "GameZone",
+    "companyName": "FunPlay",
+    "id": 12,
+    "description": "Collection of exciting mini games",
+    "size": 120,
+    "reviews": 22000,
+    "ratingAvg": 4.0,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 3000 },
+      { "name": "2 star", "count": 2500 },
+      { "name": "3 star", "count": 4000 },
+      { "name": "4 star", "count": 6000 },
+      { "name": "5 star", "count": 6500 }
+    ]
+  },
+  {
+    "image": "https://example.com/app13.png",
+    "title": "LanguagePro",
+    "companyName": "LinguaTech",
+    "id": 13,
+    "description": "Learn new languages quickly",
+    "size": 75,
+    "reviews": 10500,
+    "ratingAvg": 4.7,
+    "downloads": 450000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 6000 }
+    ]
+  },
+  {
+    "image": "https://example.com/app14.png",
+    "title": "NewsFlash",
+    "companyName": "GlobalMedia",
+    "id": 14,
+    "description": "Stay updated with latest news",
+    "size": 40,
+    "reviews": 7000,
+    "ratingAvg": 4.1,
+    "downloads": 280000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 2300 }
+    ]
+  },
+  {
+    "image": "https://example.com/app15.png",
+    "title": "SecureVault",
+    "companyName": "SafeTech",
+    "id": 15,
+    "description": "Keep your data safe and secure",
+    "size": 35,
+    "reviews": 6000,
+    "ratingAvg": 4.5,
+    "downloads": 200000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "5 star", "count": 2500 }
+    ]
+  }
+]
