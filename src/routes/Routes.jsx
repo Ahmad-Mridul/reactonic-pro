@@ -8,7 +8,8 @@ const router = createBrowserRouter([
         children:[
             {
                 path:"/",
-                element:<Home/>
+                element:<Home/>,
+                loader:()=>fetch("https://raw.githubusercontent.com/Ahmad-Mridul/reactonic-pro/refs/heads/main/src/data/AppsData.json").then(res=>res.json())
             }
         ]
     }

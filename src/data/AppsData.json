@@ -1,6 +1,6 @@
 [
   {
-    "image": "https://example.com/app1.png",
+    "image": "https://placehold.co/200x200/png?text=ChatFlow",
     "title": "ChatFlow",
     "companyName": "TechNova Ltd.",
     "id": 1,
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "image": "https://example.com/app2.png",
+    "image": "https://placehold.co/200x200/png?text=FitTrack",
     "title": "FitTrack",
     "companyName": "Healthify Inc.",
     "id": 2,
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "image": "https://example.com/app3.png",
+    "image": "https://placehold.co/200x200/png?text=NoteMaster",
     "title": "NoteMaster",
     "companyName": "WriteWell",
     "id": 3,
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "image": "https://example.com/app4.png",
+    "image": "https://placehold.co/200x200/png?text=Foodify",
     "title": "Foodify",
     "companyName": "QuickEats",
     "id": 4,
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "image": "https://example.com/app5.png",
+    "image": "https://placehold.co/200x200/png?text=TravelMate",
     "title": "TravelMate",
     "companyName": "ExploreWorld",
     "id": 5,
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "image": "https://example.com/app6.png",
+    "image": "https://placehold.co/200x200/png?text=CodeHub",
     "title": "CodeHub",
     "companyName": "DevSpace",
     "id": 6,
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "image": "https://example.com/app7.png",
+    "image": "https://placehold.co/200x200/png?text=MusicWave",
     "title": "MusicWave",
     "companyName": "SoundLab",
     "id": 7,
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "image": "https://example.com/app8.png",
+    "image": "https://placehold.co/200x200/png?text=ShopEasy",
     "title": "ShopEasy",
     "companyName": "MarketHub",
     "id": 8,
@@ -144,7 +144,7 @@
     ]
   },
   {
-    "image": "https://example.com/app9.png",
+    "image": "https://placehold.co/200x200/png?text=PhotoFix",
     "title": "PhotoFix",
     "companyName": "PixelPro",
     "id": 9,
@@ -162,7 +162,7 @@
     ]
   },
   {
-    "image": "https://example.com/app10.png",
+    "image": "https://placehold.co/200x200/png?text=WeatherNow",
     "title": "WeatherNow",
     "companyName": "SkyTech",
     "id": 10,
@@ -180,7 +180,7 @@
     ]
   },
   {
-    "image": "https://example.com/app11.png",
+    "image": "https://placehold.co/200x200/png?text=FinancePro",
     "title": "FinancePro",
     "companyName": "MoneyWise",
     "id": 11,
@@ -198,7 +198,7 @@
     ]
   },
   {
-    "image": "https://example.com/app12.png",
+    "image": "https://placehold.co/200x200/png?text=GameZone",
     "title": "GameZone",
     "companyName": "FunPlay",
     "id": 12,
@@ -216,7 +216,7 @@
     ]
   },
   {
-    "image": "https://example.com/app13.png",
+    "image": "https://placehold.co/200x200/png?text=LanguagePro",
     "title": "LanguagePro",
     "companyName": "LinguaTech",
     "id": 13,
@@ -234,7 +234,7 @@
     ]
   },
   {
-    "image": "https://example.com/app14.png",
+    "image": "https://placehold.co/200x200/png?text=NewsFlash",
     "title": "NewsFlash",
     "companyName": "GlobalMedia",
     "id": 14,
@@ -252,7 +252,7 @@
     ]
   },
   {
-    "image": "https://example.com/app15.png",
+    "image": "https://placehold.co/200x200/png?text=SecureVault",
     "title": "SecureVault",
     "companyName": "SafeTech",
     "id": 15,

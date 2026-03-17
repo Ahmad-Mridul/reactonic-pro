@@ -2,9 +2,9 @@ import { Link } from "react-router";
 import { FaGithub } from "react-icons/fa";
 const NavBar = () => {
     const links = <>
-        <Link to="/"><li><a>Home</a></li></Link>
-        <Link to="/apps"><li><a>Apps</a></li></Link>
-        <Link to="/installation"><li><a>Installation</a></li></Link>
+        <Link to="/"><li>Home</li></Link>
+        <Link to="/apps"><li>Apps</li></Link>
+        <Link to="/installation"><li>Installation</li></Link>
     </>
     return (
         <>
