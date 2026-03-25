@@ -7,7 +7,7 @@ const PageNotFound = () => {
     return (
         <div>
             <NavBar/>
-            <div className='bg-white text-center p-15 text-black space-y-3'>
+            <div className='bg-gray-200 text-center p-15 text-black space-y-3'>
                 <img src="error-404.png" alt="" className='mx-auto w-100'/>
                 <p className='text-2xl font-bold'>Oops, page not found!</p>
                 <p className='font-thin'>The page you are looking for is not available.</p>

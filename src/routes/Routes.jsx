@@ -5,6 +5,7 @@ import Apps from "../pages/Apps";
 import Installation from "../pages/Installation";
 import AppDetails from "../pages/AppDetails";
 import PageNotFound from "../pages/PageNotFound";
+import AppNotFound from "../components/AppNotFound";
 const router = createBrowserRouter([
     {
         path:"/",
@@ -28,6 +29,7 @@ const router = createBrowserRouter([
             {
                 path:"/app-details/:id",
                 element:<AppDetails/>,
+                errorElement:<AppNotFound/>,
                 loader:()=>fetch("https://raw.githubusercontent.com/Ahmad-Mridul/reactonic-pro/refs/heads/main/src/data/AppsData.json").then(res=>res.json())
             }
         ]
