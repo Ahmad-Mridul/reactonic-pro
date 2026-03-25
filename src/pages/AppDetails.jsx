@@ -30,7 +30,7 @@ const AppDetails = () => {
             <TinyBarChart ratings={ratings}/>
             <div className="border-t border-gray-300 mt-3"></div>
             <p className="text-2xl font-bold">Description</p>
-            <p>{description}</p>
+            <p style={{ whiteSpace: 'pre-line' }}>{description}</p>
         </div>
     );
 };

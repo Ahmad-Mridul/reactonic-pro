@@ -4,10 +4,12 @@ import Home from "../pages/Home";
 import Apps from "../pages/Apps";
 import Installation from "../pages/Installation";
 import AppDetails from "../pages/AppDetails";
+import PageNotFound from "../pages/PageNotFound";
 const router = createBrowserRouter([
     {
         path:"/",
         element:<App/>,
+        errorElement:<PageNotFound/>,
         children:[
             {
                 path:"/",

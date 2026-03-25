@@ -1,6 +1,5 @@
 import { FaStar } from "react-icons/fa6";
 import { GrDownload } from "react-icons/gr";
-import { Link } from "react-router";
 const AppCard = ({ app }) => {
     const { image, title, downloads, ratingAvg, id } = app;
 
@@ -8,7 +7,7 @@ const AppCard = ({ app }) => {
         ? (downloads / 100000) + "M"
         : downloads;
     return (
-        <Link to={`/app-details/${id}`}>
+        <a href={`/app-details/${id}`}>
             <div className="p-2 bg-white shadow rounded space-y-1">
                 <img src={image} alt="" className="rounded" />
                 <p className="text-left text-black">{title}</p>
@@ -21,7 +20,7 @@ const AppCard = ({ app }) => {
                     </div>
                 </div>
             </div>
-        </Link>
+        </a>
     );
 };
 
