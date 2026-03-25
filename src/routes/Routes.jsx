@@ -3,6 +3,7 @@ import App from "../App";
 import Home from "../pages/Home";
 import Apps from "../pages/Apps";
 import Installation from "../pages/Installation";
+import AppDetails from "../pages/AppDetails";
 const router = createBrowserRouter([
     {
         path:"/",
@@ -21,6 +22,11 @@ const router = createBrowserRouter([
             {
                 path:"/installation",
                 element:<Installation/>
+            },
+            {
+                path:"/app-details/:id",
+                element:<AppDetails/>,
+                loader:()=>fetch("https://raw.githubusercontent.com/Ahmad-Mridul/reactonic-pro/refs/heads/main/src/data/AppsData.json").then(res=>res.json())
             }
         ]
     }
