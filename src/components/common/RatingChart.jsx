@@ -5,7 +5,7 @@ const TinyBarChart = ({ ratings }) => {
     const sortedData = [...ratings].reverse();
 
     return (
-        <div style={{ width: '100%', height: 300 }}>
+        <div style={{ width: '100%', height: 300, minWidth: 250 }}>
             <ResponsiveContainer width="100%" height="100%">
                 <BarChart
                     layout="vertical"
