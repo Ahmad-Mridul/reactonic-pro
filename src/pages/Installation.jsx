@@ -26,10 +26,9 @@ const Installation = () => {
                 <div className="flex text-black justify-between">
                     <p className="font-bold">{matchedItems.length} Apps Found</p>
                     <select name="filter" id="" onChange={handleOptionValue} value={filterValue} className="bg-white p-1 rounded-sm">
-                        <option value="">Sort By</option>
-                        <option value="size">Size</option>
-                        <option value="rating">Rating</option>
-                        <option value="downloads">Downloads</option>
+                        <option value="">Sort By Downloads</option>
+                        <option value="low-high">Low-High</option>
+                        <option value="high-low">High-low</option>
                     </select>
                 </div>
             </div>

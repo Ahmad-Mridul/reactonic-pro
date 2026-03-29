@@ -21,7 +21,7 @@ const InstalledApp = ({ app }) => {
                     icon: "success"
                 });
                 removeItem(id);
-                setTimeout(()=>window.location.reload(),3000);
+                setTimeout(() => window.location.reload(), 3000);
             }
         });
     }
@@ -29,13 +29,19 @@ const InstalledApp = ({ app }) => {
         <div className="bg-white p-5 rounded">
             <div className="flex justify-between items-center">
                 <div className="flex items-center gap-3">
-                    <img src={image} alt="" className="w-15" />
-                    <div className="text-left">
+                    <img src={image} alt="" className="w-15 rounded" />
+                    <div className="text-left space-y-2">
                         <p className="font-bold">{title}</p>
                         <div className="flex gap-5">
-                            <p>{downloads}</p>
-                            <p>{ratingAvg}</p>
-                            <p>{size}</p>
+                            <div className="flex items-center justify-center gap-2">
+                                <img src="/icon-downloads.png" alt="" className="w-4" />
+                                <p className="text-green-400">{downloads}</p>
+                            </div>
+                            <div className="flex items-center justify-center gap-2">
+                                <img src="/icon-ratings.png" alt="" className="w-4" />
+                                <p className="text-yellow-500">{ratingAvg}</p>
+                            </div>
+                            <p className="text-gray-500">{size} MB</p>
                         </div>
                     </div>
                 </div>
