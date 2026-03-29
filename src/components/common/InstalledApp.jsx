@@ -37,7 +37,7 @@ const InstalledApp = ({ app }) => {
                                 <img src="/icon-downloads.png" alt="" className="w-4" />
                                 <p className="text-green-400">{downloads}</p>
                             </div>
-                            <div className="flex items-center justify-center gap-2 -ml-10">
+                            <div className="flex items-center justify-center gap-2 -ml-10 md:ml-0">
                                 <img src="/icon-ratings.png" alt="" className="w-4" />
                                 <p className="text-yellow-500">{ratingAvg}</p>
                             </div>
