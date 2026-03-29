@@ -19,47 +19,34 @@ const AppDetails = () => {
         : reviews;
     const localItemIds = JSON.parse(localStorage.getItem("installedApp")) || [];
     const handleAddtoLocalStorage = () => {
-        const localItemIds = JSON.parse(localStorage.getItem("installedApp")) || [];
-        if (localItemIds.includes(id)) {
-            Swal.fire({
-                title: "Sorry",
-                text: "App already installed",
-                // icon: "success"
-            });
-            return;
-        } else {
-            addToLocalStorage(id);
+        // const localItemIds = JSON.parse(localStorage.getItem("installedApp")) || [];
 
-            // Swal.fire({
-            //     title: "Yayy",
-            //     text: "App has been installed",
-            //     icon: "success"
-            // });
-            Swal.fire({
-                title: "Are you sure?",
-                text: "You won't be able to revert this!",
-                icon: "warning",
-                showCancelButton: true,
-                confirmButtonColor: "#3085d6",
-                cancelButtonColor: "#d33",
-                confirmButtonText: "Yes, Install it!"
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    Swal.fire({
-                        title: "Installed!",
-                        text: "Your file has been Installed.",
-                        icon: "success"
-                    });
-                    setTimeout(()=>window.location.reload(),3000);
-                }
-            });
-        }
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, Install it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                addToLocalStorage(id);
+                Swal.fire({
+                    title: "Installed!",
+                    text: "Your file has been Installed.",
+                    icon: "success"
+                });
+                setTimeout(() => window.location.reload(), 3000);
+            }
+        });
+
 
     }
     return (
-        <div className="p-15 bg-[#F5F5F5] text-black">
-            <div className="flex  gap-5">
-                <img src={image} alt="" />
+        <div className="md:p-15 p-5 bg-[#F5F5F5] text-black">
+            <div className="md:flex  gap-5">
+                <img src={image} className="rounded" alt="" />
                 <div className=" flex-1 space-y-3">
                     <p className="font-bold text-2xl">{title}</p>
                     <p>Developed by <span className="text-blue-600">{companyName}</span></p>
@@ -69,7 +56,7 @@ const AppDetails = () => {
                         <IconBox icon={<FaStar />} info="Average Ratings" number={ratingAvg} />
                         <IconBox icon={<MdOutlineReviews />} info="Total Reviews" number={formattedReviews} />
                     </div>
-                    <button className={`btn bg-green-400 border-0 hover:bg-green-500 `} onClick={handleAddtoLocalStorage}>{localItemIds.includes(id) ? "Installed" : `Install Now (${size} MB)`}</button>
+                    <button className={`btn bg-green-400 border-0 hover:bg-green-500 `} disabled={localItemIds.includes(id)} onClick={handleAddtoLocalStorage}>{localItemIds.includes(id) ? "Installed" : `Install Now (${size} MB)`}</button>
                 </div>
             </div>
             <div className="border-t border-gray-300 mt-3"></div>
@@ -79,7 +66,7 @@ const AppDetails = () => {
             </div>
             <div className="border-t border-gray-300 mt-3"></div>
             <p className="text-2xl font-bold">Description</p>
-            <p style={{ whiteSpace: 'pre-line' }}>{description}</p>
+            <p style={{ whiteSpace: 'pre-line' }} className="text-justify">{description}</p>
         </div>
     );
 };

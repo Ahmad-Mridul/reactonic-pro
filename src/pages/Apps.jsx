@@ -10,11 +10,11 @@ const Apps = () => {
         app.title.toLowerCase().includes(search.toLowerCase())
     );
     return (
-        <div className="bg-[#F5F5F5] p-15 text-center space-y-3">
+        <div className="bg-[#F5F5F5] md:p-15 p-5 text-center space-y-3">
             <p className="text-black text-4xl font-bold">Our All Applications</p>
             <p className="text-gray-400">Explore All Apps on the Market developed by us. We code for Millions</p>
             <div className="">
-                <div className="flex justify-between text-black">
+                <div className="flex items-center justify-between text-black">
                     <p className="font-bold">({filteredApp.length}) Apps Found</p>
                     <label className="input bg-white w-55">
                         <svg className="h-[1em] " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -32,16 +32,22 @@ const Apps = () => {
                         <input type="search" required placeholder="Search" defaultValue={search} onChange={(e) => SetSearch(e.target.value)} />
                     </label>
                 </div>
-                <div className="flex flex-wrap gap-5 justify-center items-center mt-5">
+                <div className="md:flex md:flex-wrap md:gap-5 gap-3 grid grid-cols-2 md:justify-center md:items-center mt-5">
                     {
-                        filteredApp.length>0 ? (
+                        filteredApp.length > 0 && (
                             filteredApp.map(app => (
                                 <Suspense key={app.id} fallback={<p>loading.........</p>}>
                                     <AppCard app={app} />
                                 </Suspense>
                             ))
-                        ) : (
-                            <NoAppFound/>
+                        )
+
+                    }
+                </div>
+                <div className="md:flex md:flex-wrap md:gap-5 gap-3 md:justify-center md:items-center mt-5">
+                    {
+                        filteredApp.length === 0 && (
+                            <NoAppFound />
                         )
 
                     }

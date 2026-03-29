@@ -18,6 +18,7 @@ const NavBar = () => {
                             tabIndex="-1"
                             className="menu menu-sm dropdown-content bg-white rounded-box z-1 mt-3 w-52 p-2 shadow ">
                             {links}
+                            <Link className="btn border-0 bg-linear-to-r from-[#632EE3] to-[#9F62F2] "><FaGithub />Contribute</Link>
                         </ul>
                     </div>
                     <a href="/" className="btn btn-ghost text-xl"><img src="/logo.png" alt="" className="w-10" />Reactonic Pro</a>
@@ -28,7 +29,7 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link className="btn border-0 bg-linear-to-r from-[#632EE3] to-[#9F62F2] "><FaGithub />Contribute</Link>
+                    <Link className="hidden md:flex items-center justify-center btn border-0 bg-linear-to-r from-[#632EE3] to-[#9F62F2] "><FaGithub />Contribute</Link>
                 </div>
             </div>
         </>

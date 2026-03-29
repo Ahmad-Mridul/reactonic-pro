@@ -7,7 +7,7 @@ const TrendingApps = ({ apps }) => {
         <div className="bg-[#F5F5F5]  text-black p-10 space-y-5 text-center">
             <p className="text-4xl font-bold">Trending Apps</p>
             <p className="text-gray-500">Explore All Trending Apps on the Market developed by us</p>
-            <div className="flex flex-wrap items-center justify-center gap-5">
+            <div className="md:flex md:flex-wrap md:items-center grid grid-cols-2 justify-center md:gap-5 gap-3">
                 {apps.slice(0, 8).map(app => (
                     <Suspense fallback={<p>loading........</p>}>
                         <AppCard app={app} key={app.id}></AppCard>

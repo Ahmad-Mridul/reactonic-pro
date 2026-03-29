@@ -32,12 +32,12 @@ const InstalledApp = ({ app }) => {
                     <img src={image} alt="" className="w-15 rounded" />
                     <div className="text-left space-y-2">
                         <p className="font-bold">{title}</p>
-                        <div className="flex gap-5">
+                        <div className="md:flex md:gap-5">
                             <div className="flex items-center justify-center gap-2">
                                 <img src="/icon-downloads.png" alt="" className="w-4" />
                                 <p className="text-green-400">{downloads}</p>
                             </div>
-                            <div className="flex items-center justify-center gap-2">
+                            <div className="flex items-center justify-center gap-2 -ml-10">
                                 <img src="/icon-ratings.png" alt="" className="w-4" />
                                 <p className="text-yellow-500">{ratingAvg}</p>
                             </div>
