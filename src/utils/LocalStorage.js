@@ -1,21 +1,41 @@
 import Swal from "sweetalert2";
 
 const getItems = () => {
-    const allItems = localStorage.getItem("installedApp") || [];
-    return JSON.parse(allItems);
-}
+    const data = localStorage.getItem("installedApp");
+    return data ? JSON.parse(data) : [];
+};
 
-const localItemIds = JSON.parse(localStorage.getItem("installedApp")) || [];
 const addToLocalStorage = (id) => {
-    // if (localItemIds.includes(id)) {
-    //     // Swal.fire({
-    //     //     title: "Already in installed",
-    //     //     // text: "You clicked the button!",
-    //     // });
-    //     alert("already installed");
-    //     return;
-    // }
-    const newItemIds = [...localItemIds, id];
-    localStorage.setItem("installedApp", JSON.stringify(newItemIds));
-}
-export { getItems, addToLocalStorage };
+    const items = getItems();
+
+    if (items.includes(id)) {
+        Swal.fire({
+            icon: "info",
+            title: "Already Installed",
+            text: "This app is already installed."
+        });
+        return;
+    }
+
+    const updated = [...items, id];
+    localStorage.setItem("installedApp", JSON.stringify(updated));
+
+    Swal.fire({
+        icon: "success",
+        title: "Installed",
+        text: "App installed successfully!"
+    });
+};
+
+const removeItem = (id) => {
+    console.log("item to be removed:",id);
+    console.log(typeof id);
+    const items = getItems();
+    const localItemsIdsNumber=items.map(item=>parseInt(item));
+    localItemsIdsNumber.map(item=>console.log(item));
+    const updated = localItemsIdsNumber.filter(item => item !== id);
+
+    localStorage.setItem("installedApp", JSON.stringify(updated));
+};
+
+export { getItems, addToLocalStorage, removeItem };

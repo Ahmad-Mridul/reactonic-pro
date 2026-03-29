@@ -30,10 +30,28 @@ const AppDetails = () => {
         } else {
             addToLocalStorage(id);
 
+            // Swal.fire({
+            //     title: "Yayy",
+            //     text: "App has been installed",
+            //     icon: "success"
+            // });
             Swal.fire({
-                title: "Yayy",
-                text: "App has been installed",
-                icon: "success"
+                title: "Are you sure?",
+                text: "You won't be able to revert this!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Yes, Install it!"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire({
+                        title: "Installed!",
+                        text: "Your file has been Installed.",
+                        icon: "success"
+                    });
+                    setTimeout(()=>window.location.reload(),3000);
+                }
             });
         }
 
@@ -51,7 +69,7 @@ const AppDetails = () => {
                         <IconBox icon={<FaStar />} info="Average Ratings" number={ratingAvg} />
                         <IconBox icon={<MdOutlineReviews />} info="Total Reviews" number={formattedReviews} />
                     </div>
-                    <button className={`btn bg-green-400 border-0 hover:bg-green-500 `} onClick={handleAddtoLocalStorage}>{localItemIds.includes(id)?"Installed":"Install Now ({size} MB)"}</button>
+                    <button className={`btn bg-green-400 border-0 hover:bg-green-500 `} onClick={handleAddtoLocalStorage}>{localItemIds.includes(id) ? "Installed" : `Install Now (${size} MB)`}</button>
                 </div>
             </div>
             <div className="border-t border-gray-300 mt-3"></div>
